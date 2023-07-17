@@ -1,9 +1,12 @@
-const Header = () => {
-  return (
-    <header>
-      <h1>todos</h1>
-      <p>Items will persist in the browser local storage</p>
-    </header>
-  );
+/* eslint-disable react/prop-types */
+import PropTypes from "prop-types";
+
+const Header = ({ children }) => {
+  return <div>{children}</div>;
 };
+
+Header.propTypes = {
+  children: PropTypes.node.isRequired,
+};
+
 export default Header;
