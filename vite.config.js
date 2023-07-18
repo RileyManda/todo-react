@@ -15,4 +15,5 @@ export default defineConfig({
     },
   },
   plugins: [react()],
+  base: "/", // This is needed for the app to work properly on GitHub pages
 });
