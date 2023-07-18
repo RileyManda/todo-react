@@ -1,11 +1,7 @@
-import {
-  useState,
-  useEffect,
-  createContext,
-  useContext,
-} from 'react';
+/* eslint-disable react/prop-types */
+import { useState, useEffect, createContext, useContext } from "react";
 
-import { v4 as uuidv4 } from 'uuid';
+import { v4 as uuidv4 } from "uuid";
 
 const TodosContext = createContext(null);
 
@@ -14,7 +10,7 @@ export const TodosProvider = ({ children }) => {
 
   function getInitialTodos() {
     // getting stored items
-    const temp = localStorage.getItem('todos');
+    const temp = localStorage.getItem("todos");
     const savedTodos = JSON.parse(temp);
     return savedTodos || [];
   }
@@ -22,7 +18,7 @@ export const TodosProvider = ({ children }) => {
   useEffect(() => {
     // storing todos items
     const temp = JSON.stringify(todos);
-    localStorage.setItem('todos', temp);
+    localStorage.setItem("todos", temp);
   }, [todos]);
 
   const handleChange = (id) => {
