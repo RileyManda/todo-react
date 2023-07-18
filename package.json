@@ -30,7 +30,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "vite build && gh-pages -d dist"
   },
   "eslintConfig": {
     "extends": [
@@ -66,6 +67,7 @@
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
+    "gh-pages": "^5.0.0",
     "react-scripts": "5.0.1",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0",
