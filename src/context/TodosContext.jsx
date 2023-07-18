@@ -1,22 +1,20 @@
-/* eslint-disable react/prop-types */
 import { useState, useEffect, createContext, useContext } from "react";
-
 import { v4 as uuidv4 } from "uuid";
+import { TodosProviderPropTypes } from "./TodosProviderPropTypes";
 
 const TodosContext = createContext(null);
+export const useTodosContext = () => useContext(TodosContext);
 
 export const TodosProvider = ({ children }) => {
   const [todos, setTodos] = useState(getInitialTodos());
 
   function getInitialTodos() {
-    // getting stored items
     const temp = localStorage.getItem("todos");
     const savedTodos = JSON.parse(temp);
     return savedTodos || [];
   }
 
   useEffect(() => {
-    // storing todos items
     const temp = JSON.stringify(todos);
     localStorage.setItem("todos", temp);
   }, [todos]);
@@ -36,11 +34,11 @@ export const TodosProvider = ({ children }) => {
   };
 
   const delTodo = (id) => {
-    setTodos([
-      ...todos.filter((todo) => {
+    setTodos((prevState) =>
+      prevState.filter((todo) => {
         return todo.id !== id;
-      }),
-    ]);
+      })
+    );
   };
 
   const addTodoItem = (title) => {
@@ -49,19 +47,23 @@ export const TodosProvider = ({ children }) => {
       title: title,
       completed: false,
     };
-    setTodos([...todos, newTodo]);
+    setTodos((prevState) => [...prevState, newTodo]);
   };
 
   const setUpdate = (updatedTitle, id) => {
-    setTodos(
-      todos.map((todo) => {
+    setTodos((prevState) =>
+      prevState.map((todo) => {
         if (todo.id === id) {
-          todo.title = updatedTitle;
+          return {
+            ...todo,
+            title: updatedTitle,
+          };
         }
         return todo;
       })
     );
   };
+
   return (
     <TodosContext.Provider
       value={{
@@ -76,4 +78,5 @@ export const TodosProvider = ({ children }) => {
     </TodosContext.Provider>
   );
 };
-export const useTodosContext = () => useContext(TodosContext);
+
+TodosProvider.propTypes = TodosProviderPropTypes;
