@@ -1,39 +1,206 @@
-# Getting Started with Create React App
+<a name="readme-top"></a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
 
-<br><hr>
+  <img src="app-logo.png" alt="logo" width="140"  height="auto" />
+  <br/>
+
+  <h3><b>Todo React</b></h3>
+
+</div>
+
+<!-- TABLE OF CONTENTS -->
+
+# 📗 Table of Contents
+
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+  <!-- - [🚀 Live Demo](#live-demo) -->
+- [💻 Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Setup](#setup)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
+  - [Deployment](#deployment)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [❓ FAQ (OPTIONAL)](#faq)
+- [📝 Attribution](#attribution)
+- [📝 License](#license)
+
+<!-- PROJECT DESCRIPTION -->
+
+# 📖 Todo React <a name="about-project"></a>
+
+Todo React is a website managing tasks.
+
+
+
+## 🛠 Built With <a name="built-with"></a>
+
+### Tech Stack <a name="tech-stack"></a>
+
+
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://reactjs.org/">React.js</a></li>
+  </ul>
+</details>
+
+<details>
+  <summary>Bundler</summary>
+  <ul>
+    <li><a href="https://vitejs.dev/config/">Vite.js</a></li>
+  </ul>
+</details>
+
+  <summary>Server</summary>
+  <ul>
+    <li><a href="https://expressjs.com/">Express.js</a></li>
+  </ul>
+</details>
+
+
+<!-- Features -->
+
+### Key Features <a name="key-features"></a>
+
+**Project Setup React and Linters**
+**Implement features from todo tutorial**
+**Created react application using vite**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+<!-- ## 🚀 Live Demo <a name="live-demo"></a>
+
+
+- [Live Demo Link](https://google.com)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
+
+<!-- GETTING STARTED -->
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+To get a local copy up and running, follow these steps.
+
+
+
+### Prerequisites
+
+In order to run this project you need:
+
+
+### Setup
+
+Clone this repository to your desired folder:
+
+
+```sh
+cd my-folder
+git clone https://github.com/RileyManda/todo-react.git
+```
+
+
+### Install
+
+Install this project with:
+
+
+```sh
+  cd my-project
+  npm i
+```
+
+
+### Usage
+
+To run the project, execute the following command:
+
+
+```sh
+  npm run dev
+```
+
+
+### Run tests
+
+To run tests, run the following command:
+
+
+
+
+```sh
+  npm test
+```
+
+
+### Deployment
+
+You can deploy this project using:
+    
+```sh
+    npm run build
+```
+
+ ```sh
+    gh-pages deploy --dist build
+```
+
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- AUTHORS -->
+
+## 👥 Authors <a name="authors"></a>
+
+👤 **RileyManda**
+
+- GitHub: [@RileyManda](https://github.com/RileyManda)
+- Twitter: [@rilecodez](https://twitter.com/rilecodez)
+- LinkedIn: [rileymanda](https://www.linkedin.com/in/rileymanda/)
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
-## <b>Future Features 🔭</b><a name="future-features"></a>
 
-- [ ]There are no planned future features.
+## 🔭 Future Features <a name="future-features"></a>
 
+- [ ] **[Perform Calculation]**
+- [ ] **[Generate Quotes]**
+- [ ] **[Project Ui Developement]**
+- [ ] **[Ui Developement Improvements]**
+- [ ] **[Application deployment]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<br><hr>
-
-<!-- ATTRIBUTION -->
-## 👥 Attribution <a name="attribution"></a>
-- ProjectIcon: [Svgrepo](https://www.svgrepo.com/svg/249120/books-book)
 <!-- CONTRIBUTING -->
 
-## <b>Contributing 🤝</b><a name="contributing"></a>
+## 🤝 Contributing <a name="contributing"></a>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/RileyManda/todo-react/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<br><hr>
-
-
+<!-- SUPPORT -->
 
 <!-- SUPPORT -->
 ## <b>Show your support 🌟</b><a name="support"></a>
 
-
+Thank you for taking the time to explore this project! Your support means a lot to me. If you find my project valuable and would like to contribute, here is one way you can support me:
 
  - <b>Star the project ⭐️</b>: Show your appreciation by starring this GitHub repository. It helps increase visibility and lets others know that the project is well-received.
 
@@ -43,37 +210,46 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<br><hr>
-
 <!-- ACKNOWLEDGEMENTS -->
-## <b>Acknowledgments 🙏</b><a name="acknowledgements"></a>
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 I would like to express my sincere gratitude to [Microverse](https://github.com/microverseinc), the dedicated reviewers, and collaborators. Your unwavering support, feedback, and collaborative efforts have played an immense role in making this journey a resounding success. I am truly grateful for your contributions and for being an integral part of my achievements. Thank you for your continued support.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<br><hr>
-
 <!-- FAQ (optional) -->
-## <b>FAQ ❓</b><a name="faq"></a>
+
+## ❓ FAQ <a name="faq"></a>
 
 - **Question_1**
+
   Do I have to use the vs code specifically?
+
   - Answer_1
+
     You can use any code editor of your choice. <br>
+
 - **Question_2**
+
   Where can I download node JS for installation?
+
   - Answer_2
+
   Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine.
-  It can be downloaded here: https://nodejs.org/en/download/Node.jsNode.js
+  It can be downloaded [here](https://nodejs.org/en/download/Node.jsNode.js): 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LICENCE -->
-## <b>License 📝</b><a name="license"></a>
+<!-- ATTRIBUTION -->
 
-This project is [MIT](./LICENSE) licensed.
+## 👥 Attribution <a name="attribution"></a>
+- ProjectIcon: [Svgrepo](https://www.svgrepo.com/)
 
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
