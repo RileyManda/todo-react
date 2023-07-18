@@ -7,7 +7,11 @@
 <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
 <g id="SVGRepo_iconCarrier">
 <defs>
-<style>.cls-1{fill:none;}.cls-2{fill:#f08484;}.cls-3{fill:#5c8fa3;}.cls-4{fill:#ffffff;}</style>
+<style>.cls-1 { fill: none; }
+  .cls-2 { fill: #f08484; }
+  .cls-3 { fill: #5c8fa3; }
+  .cls-4 { fill: #fff; }
+</style>
 </defs>
 <title/>
 <rect class="cls-1" height="32" id="wrapper" width="32" x="0.05"/>
